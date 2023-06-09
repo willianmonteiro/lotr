@@ -16,7 +16,10 @@ export function TabCharacterDetails() {
 
   return (
     <Fallback>
-      <Card title={character.name}>
+      <Card 
+        title={character.name}
+        testId="character-details"
+      >
         <CharacterItem character={character}/>
       </Card>
     </Fallback>

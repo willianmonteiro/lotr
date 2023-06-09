@@ -25,6 +25,7 @@ export function CharacterList() {
                  links={[{ slug: `/character/${_id}/details`, label: 'see details' }]}
                />
              )}
+             testId="character-item"
            >
              <CharacterItem character={character} />
            </Card>
