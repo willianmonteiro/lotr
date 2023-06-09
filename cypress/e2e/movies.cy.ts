@@ -32,7 +32,15 @@ describe('Main Page (movies)', () => {
 
   it('should display search results based on input', () => {
     cy.get('[data-testid="search-input"]').type('Fellowship of the Ring');
-    cy.get('[data-testid="movie-item"]').should('have.length', 1);
-    cy.contains('Fellowship of the Ring').should('be.visible');
+    cy.wait(2000);
+    cy.intercept('GET', /\/v2\/movie\?/).as('getMovie');
+
+    cy.wait('@getMovie').then((interception) => {
+      const response: any = interception.response;
+      expect(response.statusCode).to.equal(200);
+
+      cy.get('[data-testid="movie-item"]').should('have.length', 1);
+      cy.contains('Fellowship of the Ring').should('be.visible');
+    });
   });
 });
