@@ -12,7 +12,8 @@ export function CharacterList() {
       <SearchContainer 
          search={{
           service: useCharactersList,
-          property: 'name'
+          property: 'name',
+          testId: 'characters-list'
          }} 
          itemDisplayMapper={(filtered: TCharacter[]) => filtered.map(({ _id, name, ...character }: TCharacter) => (
            <Card

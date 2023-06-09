@@ -13,6 +13,7 @@ export function MovieList() {
         search={{
           service: useMoviesList,
           property: 'name',
+          testId: 'movies-list'
         }} 
         itemDisplayMapper={(filtered: TMovie[]) => filtered.map(({ _id, name, ...movie }) => (
           <Card
@@ -22,6 +23,7 @@ export function MovieList() {
             actions={(
               <Nav dark links={[{ slug: `/movie/${_id}/details`, label: 'see details' }]} />
             )}
+            testId="movie-item"
           >
             <MovieItem movie={movie} />
           </Card>

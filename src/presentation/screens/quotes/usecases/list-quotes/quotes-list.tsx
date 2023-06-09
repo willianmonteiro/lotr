@@ -13,7 +13,8 @@ export function QuoteList({ by, filterBy }: TQuoteListProps) {
           property:'dialog',
           params: {
             filterBy
-          }
+          },
+          testId: 'quotes-list'
         }}
         itemDisplayMapper={(filtered: TQuote[]) => filtered.map(({ _id, dialog }: TQuote) => (
           <Card key={_id}>

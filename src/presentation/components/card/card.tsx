@@ -10,9 +10,13 @@ export function Card({
   title,
   children,
   actions,
+  testId,
 }: TCardProps) {
   return (
-    <article className="bg-white rounded-lg border card">
+    <article 
+      data-testid={testId} 
+      className="bg-white rounded-lg border card"
+    >
       {withCover && (
           <div className="pb-2/3">
             <img 
@@ -54,4 +58,5 @@ type TCardProps = {
   withCover?: boolean
   children: ReactNode
   actions?: ReactNode
+  testId?: string
 }

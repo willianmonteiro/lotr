@@ -36,7 +36,10 @@ export function SearchContainer<TData>({
         resetFilter={debounceSearchQuery ? resetFilter : null}
       />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <div 
+        data-testid={search.testId}
+        className="grid grid-cols-1 sm:grid-cols-2 gap-8"
+      >
         {itemDisplayMapper(data?.docs)}
       </div>
 
@@ -59,6 +62,7 @@ type TSearchContainerProps<TData> = {
     service: (params: any) => UseQueryResult<TResponse<TData>, string>
     property: string
     params?: {[key: string]: any}
+    testId: string
   }
   itemDisplayMapper(filtered: TData[]): ReactNode[]
 };

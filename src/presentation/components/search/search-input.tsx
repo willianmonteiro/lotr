@@ -10,6 +10,7 @@ export function SearchInput({
     <>
        <div className="mb-4">
           <input
+            data-testid="search-input"
             type="text"
             placeholder="Search..."
             value={searchQuery}

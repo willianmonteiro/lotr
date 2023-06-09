@@ -14,7 +14,10 @@ export function TabMovieDetails() {
 
   return (
     <Fallback>
-      <Card title={movie.name}>
+      <Card 
+        title={movie.name} 
+        testId='movie-details'
+      >
         <MovieItem movie={movie}/>
       </Card>
     </Fallback>
