@@ -22,7 +22,10 @@ To run the project locally, follow these steps:
 1.  Make sure you have installed the dependencies by running the following command in your project directory: `yarn install`
 2. Start your application's development server. Make sure the application is running on the expected URL.
 
-3. Open a new terminal window and run the following command to launch Cypress: `yarn cypress:open`
+3. Open a new terminal window and run the following command to launch Cypress:
+```shell 
+yarn cypress:open
+```
 4. Cypress Test Runner will open, showing a list of available test files.
 5. Click on the test file you want to run, such as movies.cy.ts, to execute the tests.
 6. Cypress will open a browser window and start executing the tests. You will be able to see the test progress and results in the Cypress Test Runner interface.
