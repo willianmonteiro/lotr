@@ -18,6 +18,27 @@ To run the project locally, follow these steps:
 - Start the development server: `npm run dev or yarn dev`
 - Open your web browser and visit http://localhost:5173 to view the application.
 
+## Running tests
+1.  Make sure you have installed the dependencies by running the following command in your project directory: `yarn install`
+2. Start your application's development server. Make sure the application is running on the expected URL.
+
+3. Open a new terminal window and run the following command to launch Cypress: `yarn cypress:open`
+4. Cypress Test Runner will open, showing a list of available test files.
+5. Click on the test file you want to run, such as movies.cy.ts, to execute the tests.
+6. Cypress will open a browser window and start executing the tests. You will be able to see the test progress and results in the Cypress Test Runner interface.
+7. Once the tests are completed, you can view the detailed test results, including any failures or errors.
+
+Note: If you prefer to run the tests in headless mode (without the Test Runner interface), you can use the following command: 
+```shell 
+yarn cypress:run
+```
+
+This will execute the tests in the terminal, and you will still be able to see the test results and any failures or errors.
+
+
+
+
+
 
 ## Project Structure
 
