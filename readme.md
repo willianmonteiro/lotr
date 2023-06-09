@@ -71,3 +71,4 @@ List of planned improvements and features to consider for the project. These are
 - Implement additional filters for the lists to allow users to refine their search based on different criteria.
 - Implement sort options for the lists to allow users to sort the results by different attributes
 - Improve the display of movie quotes by including author information along with the quote.
+- Create stories using Storybook for the components to enable isolated development and showcase component variations and use cases.
