@@ -26,6 +26,27 @@ The combination of component reusability and Tailwind CSS as a global styling fr
 
 - `Pagination`: A reusable pagination component that handles the navigation between pages of search results. It allows users to easily navigate through the available content and provides a clear indication of the current page and the total number of pages.
 
+- `SearchContainer`: The `SearchContainer` component is responsible for rendering a searchable list of items and handling pagination. It utilizes other components and custom hooks to provide a seamless search experience.
+
+```tsx
+  import { SearchContainer } from "./path/to/SearchContainer";
+
+  <SearchContainer
+    search={{
+      service: yourServiceFunction,
+      property: "propertyName",
+      params: { /* optional parameters */ },
+      testId: "search-container" // test ID for testing purposes
+    }}
+    itemDisplayMapper={(filteredItems) => {
+      // Map and render each item in the filteredItems array
+      return (
+        // JSX code for rendering each item
+      );
+    }}
+  />
+```
+
 ## Tailwind CSS
 
 The project utilizes the Tailwind CSS framework for styling the UI components. Tailwind CSS offers a utility-first approach to styling, providing a wide range of pre-defined utility classes that can be easily applied to HTML elements. This approach allows for rapid development and customization of the UI without writing custom CSS code.
