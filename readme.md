@@ -15,6 +15,13 @@ To run the project locally, follow these steps:
 - Clone the repository: git clone <https://github.com/willianmonteiro/willian_Project.git>
 - Navigate to the project directory: `cd willian_Project`
 - Install the dependencies: `npm install or yarn install`
+- Configure the environment file:
+  - Create a new file named `.env` in the project's root directory.
+  - Open the .env file and add the following line:
+    - `VITE_API_TOKEN=YOUR_API_TOKEN` 
+    - Replace YOUR_API_TOKEN with the API token you obtain from <https://the-one-api.dev/documentation>. To get this token all you need is setting up an account with a valid email address.
+  - Save the `.env` file.
+
 - Start the development server: `npm run dev or yarn dev`
 - Open your web browser and visit http://localhost:5173 to view the application.
 
