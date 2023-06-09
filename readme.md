@@ -61,3 +61,13 @@ On the other hand, the `/src/presenter` directory is dedicated to React-specific
 This architecture promotes separation of concerns and code reusability. The logic layer (`/src/app`) focuses on the business logic and data handling, while the presentation layer (`/src/presenter`) deals with UI components, routing, and screen composition. The use of hooks in the services enables components to access the necessary functionality without directly interacting with the logic layer.
 
 By structuring the project in this way, it becomes easier to maintain, test, and extend the application while keeping a clear separation between different aspects of the codebase.
+
+
+## TODO
+List of planned improvements and features to consider for the project. These are enhancements that can be implemented with more time.
+
+- Improve the error handler to provide more detailed error messages and handle different error scenarios.
+- Create unit tests for the components and functions to ensure proper functionality and code coverage.
+- Implement additional filters for the lists to allow users to refine their search based on different criteria.
+- Implement sort options for the lists to allow users to sort the results by different attributes
+- Improve the display of movie quotes by including author information along with the quote.
