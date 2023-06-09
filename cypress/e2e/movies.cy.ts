@@ -3,7 +3,7 @@ describe('Main Page (movies)', () => {
     cy.visit('/');
   });
 
-  it('should display the movie list', () => {
+  it('[list-movies]: should display the movie list', () => {
     cy.intercept('GET', /\/v2\/movie\?/).as('getMovies');
 
     cy.wait('@getMovies').then((interception) => {
@@ -13,7 +13,7 @@ describe('Main Page (movies)', () => {
     });
   });
 
-  it('should navigate to movie details on clicking "See Details"', () => {
+  it('[see-movie-details]: should navigate to movie details on clicking "See Details"', () => {
     cy.intercept('GET', /\/v2\/movie\?/).as('getMovie');
       
     cy.get('[data-testid="movie-item"]').first().within(() => {
@@ -30,7 +30,7 @@ describe('Main Page (movies)', () => {
     
   });
 
-  it('should display search results based on input', () => {
+  it('[list-movies]: should display search results based on input', () => {
     cy.get('[data-testid="search-input"]').type('Fellowship of the Ring');
     cy.wait(2000);
     cy.intercept('GET', /\/v2\/movie\?/).as('getMovie');
