@@ -5,7 +5,7 @@ import { config as configEnv } from 'dotenv'
 configEnv()
 
 export default defineConfig({
-  base: "/willianmonteiro/willian_Project/",
+  base: "/willian_Project/",
   plugins: [react()],
 })
 
