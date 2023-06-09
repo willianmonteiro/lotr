@@ -13,21 +13,20 @@ describe('Characters', () => {
     });
   });
 
-  it('[see-character]: should navigate to character details on clicking "See Details"', () => {
+  it('[see-character-details]: should navigate to character details on clicking "See Details"', () => {
     cy.intercept('GET', /\/v2\/character\?/).as('getCharacter');
-      
+  
     cy.get('[data-testid="character-item"]').first().within(() => {
       cy.contains('see details').click();
     });
-
+  
     cy.wait('@getCharacter').then((interception) => {
       const response: any = interception.response;
       expect(response.statusCode).to.equal(200);
-
-      cy.url().should('include', '/character/');
-      cy.get('[data-testid="character-details"]').should('exist');
     });
-    
+  
+    cy.url().should('include', '/character/');
+    cy.get('[data-testid="character-details"]').should('exist');
   });
 
   it('[list-characters]: should display search results based on input', () => {
