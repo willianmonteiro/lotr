@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-    "types": ["cypress"],
+    "types": ["jest", "cypress", "cypress-axe"],
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -21,6 +23,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "**/*.ts"],
+  "include": ["src", "**/*.ts", "src/**/*.test.ts", "src/**/*.test.tsx", "jest.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
