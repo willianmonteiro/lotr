@@ -12,7 +12,7 @@ This project is a front-end application built around the Lord of the Rings API, 
 ## Installation and Usage
 To run the project locally, follow these steps:
 
-- Clone the repository: git clone <https://github.com/willianmonteiro/willian_Project.git>
+- Clone the repository: git clone <https://github.com/willianmonteiro/lotr.git>
 - Navigate to the project directory: `cd willian_Project`
 - Install the dependencies: `npm install or yarn install`
 - Configure the environment file:
