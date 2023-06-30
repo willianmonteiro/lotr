@@ -1,6 +1,6 @@
 export default {
   e2e: {
-    baseUrl: "http://localhost:5173/willian_Project",
+    baseUrl: "http://localhost:5173/lotr",
     viewportWidth: 1280,
     viewportHeight: 720,
     specPatter: {
