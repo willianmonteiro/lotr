@@ -5,7 +5,7 @@ import { config as configEnv } from 'dotenv'
 configEnv()
 
 export default defineConfig({
-  base: "/willian_Project/",
+  base: "/lotr/",
   plugins: [react()],
 })
 
