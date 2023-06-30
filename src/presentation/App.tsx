@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   return (
-    <BrowserRouter basename='/willian_Project'>
+    <BrowserRouter basename='/lotr'>
       <AppProviders>
         <Header />
 
